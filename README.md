@@ -1,8 +1,8 @@
 
 # AngularJS
 
-Llibreria JavaScript orientada a les aplicacions web per administrar contiguts
-dinamics.
+Framework JavaScript orientada a les aplicacions web per administrar contiguts
+dinamics i desenvolupat per Google.
 
 data: 23/03/2015
 
@@ -13,10 +13,11 @@ data: 23/03/2015
 
 ## Entorn de desenvolupament.
 
+- Ubuntu 14.10
 - Firefox Developer edition 38.0a2
-  JSONView http://jsonview.com/
+  - JSONView http://jsonview.com/
 - Atom Editor 0.187.0
-  Emmet
+  - Emmet
 - normalize.css
 - angularjs 1.3.15
 
@@ -47,20 +48,25 @@ tipos text, una capçalera per imprimir el contingut de l'imput.
 </div>
 ```
 
-Les etiquetes afectades per aquesta llibreria ha de tenir una etiqueta pare amb
+La part de l'aplicació en que ha de treballar AngularJS es defineix amb
 l'atribut `ng-app`. Es pot incorporar tan a l'etqueta `<html>`, com la `<body>`
-o en el `<div>` que conté l'escenari.
+o en el `<div>` que conté l'escenari. I afecta a tots els nodes fills.
+
+**Més sobre `ng-app` a**: https://docs.angularjs.org/api/ng/directive/ngApp
+
 
 ```
 <html lang="en" ng-app>
 ```
 
-Ara és el moment de la lògica, per assosiar el contingut de l'`<input>` a
-l'etiqueta `<h1>`. Per això es fa servir l'atribut `ng-model` per donar un nom
-al contingut de l'`<input>` i es referencia aquest contingut amb el nom donat
-entre claus dobles `{{ }}`.
+Per assosiar el valor de l'`<input>` a
+l'etiqueta `<h1>`. Es fa servir l'atribut `ng-model` per bindejar ek contingut
+de l'`<input>` i es referencia aquest contingut amb el nom donat entre claus
+dobles `{{ }}`.
 
 ```
 <input type="text" ng-model="yourName" id="name" placeholder="Enter a name here">
 <h1>Hello {{ yourName }}!</h1>
 ```
+
+**Més sobre `ng-model` a**: https://docs.angularjs.org/api/ng/directive/ngModel
