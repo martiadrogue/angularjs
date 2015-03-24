@@ -32,7 +32,27 @@ function SettingsController() {
 }
 ```
 
-**Més sobre `model` a**: https://docs.angularjs.org/api/ng/function/angular.module
+
+El controlador també és pot representar per mitjà de la variable `$scope`.
+
+```
+var app = angular.module('app', []);
+app.controller('SettingsController', ['$scope', SettingsController]);
+
+function SettingsController($scope) {
+  $scope.author = {
+    "name": "John Smith",
+    "title": "staff author",
+    "company": "Death Star"
+  };
+}
+```
+
+Tot i els canvis en la funció niuada al Controlador, no fa falta que variïn els
+paràmetres de la funció controller() respecte a l'anterior proposta.
+
+- **Més sobre `model` a**: https://docs.angularjs.org/api/ng/function/angular.module
+- **Més sobre `controller` a**: https://code.angularjs.org/1.3.15/docs/guide/controller
 
 ### Controller
 
