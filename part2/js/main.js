@@ -1,8 +1,10 @@
 var app = angular.module('app', []);
-app.controller('SettingsController', SettingsController);
+app.controller('SettingsController', ['$scope', SettingsController]);
 
-function SettingsController () {
-  this.name = "John Smith";
-  this.title = "staff author";
-  this.company ="Death Star";
+function SettingsController($scope) {
+  $scope.author = {
+    "name": "John Smith",
+    "title": "staff author",
+    "company": "Death Star"
+  };
 }
