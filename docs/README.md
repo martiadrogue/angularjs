@@ -38,7 +38,6 @@ o en el `<div>` que conté l'escenari. I afecta a tots els nodes fills.
 
 **Més sobre `ng-app` a**: https://docs.angularjs.org/api/ng/directive/ngApp
 
-
 ```
 <html lang="en" ng-app>
 ```
