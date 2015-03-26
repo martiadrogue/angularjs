@@ -49,7 +49,8 @@ angular. Això significa, una etiqueta <html> amb l'atribut `ng-app="app"`, i un
 mencionat, afegim una llista amb un sol element.
 
 L'element de la llista a d'incorporar la directiva `ng-repeat`, funcióna com un
-blucle foreach, duplicarà l'element html afectat tates vegades com items hi hagi a l'array JavaScript vinculat.
+blucle foreach, duplicarà l'element html afectat tates vegades com items hi hagi
+a l'array JavaScript vinculat.
 
 ```
 <ul class="artistlist">
@@ -58,7 +59,9 @@ blucle foreach, duplicarà l'element html afectat tates vegades com items hi hag
 </ul>
 ```
 
-L'anterior directiva conté com a valor `item in artists`. Que ve a deir, crea un element anomenat item que llegeix les dades de la llista artists. S'accedeix a les propietats de cada item amb un punt, exacatament igual que avans.
+L'anterior directiva conté com a valor `item in artists`. Que ve a deir, crea un
+element anomenat item que llegeix les dades de la llista artists. S'accedeix a
+les propietats de cada item amb un punt, exacatament igual que avans.
 
 ```
 <ul class="artistlist">
