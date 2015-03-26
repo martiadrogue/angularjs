@@ -44,14 +44,12 @@ $scope.artists = [
 ## Template
 
 Des del template, partint de l'estructura basica html optima per treballar amb
-angular. Això sognofoca, una etiqueta <html> amb l'atribut `ng-app="app"`, i un
+angular. Això significa, una etiqueta <html> amb l'atribut `ng-app="app"`, i un
 `<div>` amb l'atribut `ng-controller="SettingsController"`. Dins el `<div>`
 mencionat, afegim una llista amb un sol element.
 
 L'element de la llista a d'incorporar la directiva `ng-repeat`, funcióna com un
-blucle foreach, duplicarà tates vegades com elements hi hagi a la gista que
-estigui vinculada l'element html afectat, i amb les dades de cada item de la
-llista per descomptat.
+blucle foreach, duplicarà l'element html afectat tates vegades com items hi hagi a l'array JavaScript vinculat.
 
 ```
 <ul class="artistlist">
@@ -90,7 +88,7 @@ lloc de l'atribut `src` de l'etiqueta `<img>`.
 En que cas de que l'array no contingui elements. Es crea un altre etiqueta
 `<li>` a la llita amb la directiva `ng-if` i el valor `results.length == 0`. És
 una condició normal i current que està dient, si la longitud de l'array és igual
-a 0, és a dir, l'array no té cap valor. Mostra aquesta etiqueta.
+a 0, no té cap valor. Mostra aquesta etiqueta.
 
 ```
 <li class="artist cf" ng-if="results.length == 0">
