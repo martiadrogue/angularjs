@@ -6,6 +6,7 @@ function SettingsController($scope, $http) {
 
   function fillArtists (data) {
     $scope.artists = data;
+    $scope.artistOrder = 'name';
   }
 
   function showError () {
