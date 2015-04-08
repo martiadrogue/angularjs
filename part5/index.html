@@ -9,6 +9,11 @@
 </head>
 <body>
   <div class="main" ng-controller="SettingsController">
+    <div class="search">
+      <h1>Artist Directory</h1>
+      <label for="">Search:</label>
+      <input type="text" placeholder="Search for artists" autofocus="">
+    </div>
     <ul class="artistlist">
       <li class="artist cf" ng-repeat="item in artists | limitTo: 5">
         <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
