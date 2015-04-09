@@ -1,7 +1,7 @@
-var app = angular.module('app', []);
-app.controller('SettingsController', ['$scope', '$http', SettingsController]);
+var artistControllers = angular.module('artistControllers', []);
+artistControllers.controller('ListController', ['$scope', '$http', ListController]);
 
-function SettingsController($scope, $http) {
+function ListController($scope, $http) {
   $http.get('js/data.json').success(fillArtists).error(showError);
 
   function fillArtists (data) {
