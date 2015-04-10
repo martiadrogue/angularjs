@@ -1,4 +1,5 @@
 var artistControllers = angular.module('artistControllers', []);
+
 artistControllers.controller('ListController', ['$scope', '$http', ListController]);
 
 function ListController($scope, $http) {
