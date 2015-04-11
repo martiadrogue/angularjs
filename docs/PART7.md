@@ -49,7 +49,8 @@ function Router ($routeProvider) {
   $routeProvider.when('/list', {
     templateUrl: 'partials/list.html',
     controller: 'ListController'
-  }).otherwise({
+  });
+  $routeProvider.otherwise({
     redirectTo: '/list'
   });
 }
