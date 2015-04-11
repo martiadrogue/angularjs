@@ -7,6 +7,10 @@ function Router ($routeProvider) {
     templateUrl: 'partials/list.html',
     controller: 'ListController'
   });
+  $routeProvider.when('/details/:itemId', {
+    templateUrl: 'partials/details.html',
+    controller: 'DetailsController'
+  });
   $routeProvider.otherwise({
     redirectTo: '/list'
   });
