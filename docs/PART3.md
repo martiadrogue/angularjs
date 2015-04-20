@@ -7,19 +7,16 @@
 
 ### Escenari
 
-Treballem amb un document HTML5, fulles d'estil, la llibreria AngularJS i dos
-documents JavaScript per separar la lògica del HTML i per guardar les dades en
-format JSON. La funció principal d'aquest exmple és, carregar un JSON a la
-vista.
+Partim d'un model amb un llistat d'objectes. La funció principal d'aquest
+exemple és, carregar la llista des d'un fitxer JSON.
 
 ### Request
 
-Partint de l'ultima part, les dades estaven representades per un array
-d'objectes. Cal llegir les dades d'un fitxer JSON, i utilitzar aquestes en
-comptes de l'array d'objectes.
+Les dades estan representades per un array d'objectes. Cal llegir les dades d'un
+fitxer JSON, i utilitzar aquestes en comptes de l'array d'objectes.
 
-Per fer això utilitem l'objecte d'AngjularJS anomenat Service. Per a llgir el
-JSON utilitem el servei $http, s'ha de posar com a dependencia del controlador,
+Per fer això utilitzem l'objecte d'AngjularJS anomenat Service. Per a llegir el
+JSON utilitzem el servei $http, s'ha de posar com a dependència del controlador,
 igual que es fa amb el $scope.
 
 ```
@@ -33,9 +30,10 @@ function SettingsController($scope, $http) {
 - **Més sobre `services` a**: https://code.angularjs.org/1.3.15/docs/guide/services
 - **Més sobre el servei `http` a**: https://code.angularjs.org/1.3.15/docs/api/ng/service/$http
 
-Ens hem de conectar al servidro JSON i demanar per una iformació, en el nostra
-cas ovicada a *js/data.jsons*. Si la connecció es satisfactoria que executi un
-metode per omplir l'array de dades del $scope, sino, executa un altre.
+Ens hem de connectar al servidro JSON i demanar per una informació, en el nostre
+cas ubicada a *js/data.jsons*. Si la connexió és satisfactòria que executi un
+mètode per omplir l'array de dades del $scope, si no, executa un altre per
+informar de l'error.
 
 ```
 function SettingsController($scope, $http) {
@@ -52,8 +50,9 @@ function SettingsController($scope, $http) {
 ```
 
 Des de Chromium pareix l'error *"XMLHttpRequest Cannot load ..."*. Per motius de
-seguretat, Chrmoium només permet el JSON que provenen de servidor, i si t'ha
-aparegut aquest error és perque estas accedint al JSON son ordinador local. El problema es soluciona accedit al google-chrome amb la comanda
+seguretat, Chrmoium només permet connexions Ajax que provenen de servidor, i si
+t'ha aparegut aquest error, és per què estàs accedint al JSON son ordinador
+local. El problema es soluciona accedit al google-chrome amb la comanda
 
 ```
 google-chrome --disable-web-security
@@ -61,7 +60,7 @@ google-chrome --disable-web-security
 
 En **Firefx 38.0a2** les dades en JSON es carrguen sense problemes però la
 consola mostra un error de sintaxi a la linia 1 del fitxer que conté les dades.
-Es pot solucionar executant la pàgina dés d'un servidor, per exemple Apache, o
+Es pot solucionar executant la pàgina des d'un servidor, per exemple Apache, o
 també es pot utilitzar la funció de PHP *"Built-in Server"* executant la
 comanda.
 
@@ -71,5 +70,5 @@ php -S localhost:8000
 
 ## Template
 
-El template es queda tal qüal, ja que en aquesta ocasia, treballem amb les
-mateixes dedades i només varia la forma d'obtenir-les.
+El template es queda tal qual, ja que en aquesta ocasió, treballem amb les
+mateixes de dades i només varia la forma d'obtenir-les.
