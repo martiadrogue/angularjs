@@ -46,7 +46,6 @@ Canviar el nom del controlador i l'aplicació per altres de més adients a la
 funció que fan cada un. Utilitzar el nom *"artistControllers"* per l'aplicació.
 I *"ListController"* pel controlador.
 
-
 ```
 var artistControllers = angular.module('artistControllers', []);
 artistControllers.controller('ListController', ['$scope', '$http', ListController]);

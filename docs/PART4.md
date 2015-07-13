@@ -29,7 +29,7 @@ els blocs de dades utilitzat pels noms, seguit del filtre uppercase.
 
 Per posar un límit de cinc artistes al llistat. Afegeix una altra barra
 vertical, ara dins el bloc que simula un bucle foreach ng-repeat i tot seguit
-posa el filtre limitTo dos punts i el numero mpaxim d'artistes que vols mostrar.
+posa el filtre limitTo dos punts i el numero màxim d'artistes que vols mostrar.
 
 ```
 <li class="artist cf" ng-repeat="item in artists | limitTo: 5">

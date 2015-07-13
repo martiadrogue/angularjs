@@ -26,10 +26,10 @@ la llista. Per crear el model en el template fem us de l'atribut `ng-model.`
 
 ### Filtre
 
-Eliminem els Limit per poder visualitzar tots els resultats i el fitre per posar
+Eliminem el Limit per poder visualitzar tots els resultats i el fitre per posar
 els noms dels artistes en majuscules.
 
-Afegim un filtra al llistat i el vinculem amb el modul que hem creat.
+Afegim un filtre al llistat i el vinculem amb el modul que hem creat.
 
 ```
 <li class="artist cf" ng-repeat="item in artists | filter: query">

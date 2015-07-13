@@ -13,7 +13,7 @@ modular, implementem un proveidor de rutes.
 
 ### Aplicació
 
-Creeem un fitxer *js/app.js* i l'enllacem amb l'*index.html*.
+Creem un fitxer *js/app.js* i l'enllacem amb l'*index.html*.
 
 ```
 <script src="js/app.js"></script>
@@ -21,7 +21,10 @@ Creeem un fitxer *js/app.js* i l'enllacem amb l'*index.html*.
 
 ### Controladors
 
-Creem una variable anomenada myApp i li assignem el modul d'angular myApp i un array. El nom del modul el treiem del tag ´ng-app="myApp"´. Aquest array conté les dependencies, els moduls; ngRoute i el que hem creat anteriorment per carregar el llistat d'artistes.
+Creem una variable anomenada myApp i li assignem el modul d'angular myApp i un
+array. El nom del modul el treiem del tag ´ng-app="myApp"´. Aquest array conté
+les dependencies, els moduls; ngRoute i el que hem creat anteriorment per
+carregar el llistat d'artistes.
 
 ```
 var myApp = angular.module('myApp',['ngRoute', 'artistControllers']);
